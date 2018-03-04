@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.koldar</groupId>
 	<artifactId>kcommons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -14,7 +13,8 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/Koldar/kutils.git</developerConnection>
-	</scm>
+	  <tag>kcommons-0.0.1</tag>
+  </scm>
 
 	<build>
 		<plugins>
@@ -23,6 +23,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>${version.maven.release.plugin}</version>
 				<configuration>
+					<mavenHome>apache-maven-3.5.2/</mavenHome>
 					<tagBase>https://github.com/Koldar/kcommons/tags</tagBase>
 				</configuration>
 			</plugin>
