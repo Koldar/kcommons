@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.koldar</groupId>
 	<artifactId>kcommons</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -23,6 +23,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>${version.maven.release.plugin}</version>
 				<configuration>
+					<username>Koldar</username>
 					<mavenHome>apache-maven-3.5.2/</mavenHome>
 					<tagBase>https://github.com/Koldar/kcommons/tags</tagBase>
 				</configuration>
